@@ -4,7 +4,7 @@
 
 void assign_values(int x[])
 {
-    for (int i = 0; i < 100; ++i) {
+    for (int i = 0; i < 10; ++i) {
         x[i] = (i + 1) * (i + 1);
     }
 }
@@ -14,7 +14,9 @@ int main(void)
     int data[10] = { 0 };
 
     assign_values(data);
-    printf("Done!\n");
+    for(int i=0; i<10; i++) {
+        printf("%d\n", data[i]);
+    }
 
     return 0;
 }

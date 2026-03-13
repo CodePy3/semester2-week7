@@ -1,0 +1,12 @@
+get_values(): argc=4
+get_values(): arg "5" -> 5
+get_values(): arg "10" -> 10
+get_values(): arg "15" -> 15
+get_values(): returning 0x63fabdb872a0
+main(): data at 0x63fabdb872a0
+main(): num_values=3
+sum_values(): i=0, sum=5
+sum_values(): i=1, sum=15
+sum_values(): i=2, sum=30
+main(): calculation complete
+main(): freed allocated storage

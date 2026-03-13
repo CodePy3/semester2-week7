@@ -42,7 +42,7 @@
 
    In this case, the assertion `data != NULL` failed; in other words, `data`
    must have the value `NULL`. This happened on line 33, just inside the
-   `sum_values()` function.
+   `sum_values()` function. 
 
 3. Now comment out line 53, so that `num_values` is not given the correct
    value. (Remember, you can do this by putting `//` at the start of the line.)
