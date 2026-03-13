@@ -12,7 +12,7 @@ void read_data(const char* filename, float data[], int* size)
     char line[MAX_LENGTH];
     float value;
 
-    *size = 0;
+    *size = 0; 
     FILE* infile = fopen(filename, "r");
 
     if (infile != NULL) {
