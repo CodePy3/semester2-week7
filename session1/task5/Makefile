@@ -3,16 +3,9 @@
 CFLAGS = -g
 EXECS = factorial vars
 
-help:
-	@echo "Task 5 Help:"
-	@echo
-	@echo "Enter 'make' followed by name of an executable"
-	@echo "(Options are: $(EXECS))"
-	@echo
-	@echo "Remove all executables with 'make clean'"
 
-%: %.c
-	gcc $(CFLAGS) $< -o $@
+make:
+	gcc $(CFLAGS) factorial.c -o factorial
 
 clean:
 	@rm -f $(EXECS)

@@ -93,7 +93,7 @@
        penguin
        xxxxxxx
        xxxxxxxxxx
-
+ 2
    The first and second of these should give you "Login succeeded" and
    "Login failed" messages, as before. The third should trigger ASan and
    display diagnostic information in the terminal.

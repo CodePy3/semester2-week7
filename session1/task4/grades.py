@@ -35,9 +35,10 @@ def grade(mark):
 
     MarkError is raised if the provided mark is not valid.
     """
+    mark = int(mark)
     if 0 <= mark < 40:
         return "Fail"
-    elif 40 <= mark <= 70:
+    elif 40 <= mark < 70:
         return "Pass"
     elif 70 <= mark <= 100:
         return "Distinction"
@@ -46,7 +47,7 @@ def grade(mark):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 1:
+    if len(sys.argv) != 2:
         sys.exit("Usage: python grades.py <csv-filename>")
 
     marks = read_marks(sys.argv[1])
